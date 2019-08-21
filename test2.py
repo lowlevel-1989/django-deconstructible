@@ -11,7 +11,7 @@ class T2:
         print('__call__', args, kwargs)
 
     def __eq__(self, other):
-        return isinstance(other, T2)
+        return isinstance(other, self.__class__)
 
 def main():
     print('- A')

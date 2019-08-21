@@ -8,7 +8,7 @@ class T1:
         print('__call__', args, kwargs)
 
     def __eq__(self, other):
-        return isinstance(other, T1)
+        return isinstance(other, self.__class__)
 
 def main():
     print('- A')
